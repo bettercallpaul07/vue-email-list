@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>API</title>
+        <title>Generate Email with API</title>
         
         <link rel="stylesheet" href="css/style.css">
 
@@ -18,20 +18,22 @@
     <body>
         <div id="app">
             <h1>Generatore Elenco Mail</h1>
-            <div v-if="mailList.length > 9">
+            <div class="container" v-if="mailList.length > 9">
                 <ul class="mailResult">
                     <li v-for="(singleMail,index) in mailList">
                         {{singleMail}}
                     </li>
                 </ul>
+                <p class="clock">Tempo di esecuzione {{timeesecution}} (ms)</p>
             </div>
             <div class="loading" v-else>
                 <p>Sto generando le mail</p>
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
             </div>
 
 
 
     <!-- Importo i file JS -->
-	<script src="js/scripts.js"></script>        
+	<script src="js/scripts.js"></script>   
     </body>
 </html>
