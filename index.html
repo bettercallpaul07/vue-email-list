@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Importo Vue Js -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+        <!-- Importo Axios -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js" integrity="sha512-RUkwGPgBmjCwqXpCRzpPPmGl0LSFp9v5wXtmG41+OS8vnmXybQX5qiG5adrIhtO03irWCXl+z0Jrst6qeaLDtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <h1>Generatore Elenco Mail</h1>
+            <ul class="mailResult">
+                <li v-for="(singleMail,index) in mailList">
+                    {{singleMail}}
+                </li>
+            </ul>
+        </div>
+
+
+    <!-- Importo i file JS -->
+	<script src="js/scripts.js"></script>        
+    </body>
+</html>
