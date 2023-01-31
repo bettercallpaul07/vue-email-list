@@ -8,6 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     text-align: center;
+    background-color: #171f30;
 }
 
 h1 {
@@ -15,6 +16,29 @@ h1 {
 
 }
 
+#app {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+    margin-top: 3em;
+    padding-bottom: 1em;
+    border: 1px solid black;
+}
+
+ul li {
+    list-style: none;
+}
+
+
 .mailResult {
     padding-top: 50px;
 }
+
+
+.loading p {
+    padding-top: 50px;
+}
+

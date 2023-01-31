@@ -18,12 +18,17 @@
     <body>
         <div id="app">
             <h1>Generatore Elenco Mail</h1>
-            <ul class="mailResult">
-                <li v-for="(singleMail,index) in mailList">
-                    {{singleMail}}
-                </li>
-            </ul>
-        </div>
+            <div v-if="mailList.length > 9">
+                <ul class="mailResult">
+                    <li v-for="(singleMail,index) in mailList">
+                        {{singleMail}}
+                    </li>
+                </ul>
+            </div>
+            <div class="loading" v-else>
+                <p>Sto generando le mail</p>
+            </div>
+
 
 
     <!-- Importo i file JS -->

@@ -20,9 +20,24 @@ createApp ({
 
   methods: {
 
-  },//methods
+    // generateMail () {
+    //   for (let i = 1; i<=10; i++) {
+    //     axios
+    //       .get("https://flynn.boolean.careers/exercises/api/random/mail")
+    //       .then( 
+    //         (output) => {
+  
+    //           console.log (i, output)
 
-  mounted() {
+    //           this.mailList.push(output.data.response)
+    //         });        
+    //   }},
+
+    },//methods
+
+
+
+   mounted() {
     for (let i = 1; i<=10; i++) {
       axios
         .get("https://flynn.boolean.careers/exercises/api/random/mail")
@@ -33,9 +48,8 @@ createApp ({
 
             this.mailList.push(output.data.response)
           });        
-    }
+    }}
 
-  }
-
+  
 }).mount("#app")
 
